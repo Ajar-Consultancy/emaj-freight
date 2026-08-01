@@ -82,7 +82,7 @@ export default function ServiceDetailPage({ params }: PageProps) {
                   className="w-full flex items-center justify-center space-x-2 py-3 px-4 bg-slate-100 hover:bg-slate-200 text-[#0E2A47] font-semibold rounded-xl text-sm"
                 >
                   <Phone className="w-4 h-4 text-[#E86024]" />
-                  <span>Speak to an Expert </span>
+                  <span>Call Us </span>
                 </a>
               </div>
             </div>
