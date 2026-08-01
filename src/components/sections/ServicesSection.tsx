@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
-import { SERVICES_LIST } from "@/config/servicesData";
+import { SERVICES_DATA } from "@/config/servicesData";
 
 export default function ServicesSection() {
   return (
@@ -31,15 +31,15 @@ export default function ServicesSection() {
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {SERVICES_LIST.map((service) => (
+          {SERVICES_DATA.map((service) => (
             <div
-              key={service.id}
+              key={service.slug}
               className="group relative rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-500 flex flex-col justify-between min-h-[420px] shadow-2xl"
             >
               {/* Background Image with Dark Vignette */}
               <div className="absolute inset-0 z-0">
                 <Image
-                  src={service.imageUrl}
+                  src={service.image}
                   alt={service.title}
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-40 group-hover:opacity-30"
@@ -51,7 +51,7 @@ export default function ServicesSection() {
               <div className="relative z-10 p-8">
                 <div className="flex justify-between items-start mb-4">
                   <span className="text-xs font-bold uppercase tracking-widest text-[#E86024] bg-slate-950/80 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-800">
-                    {service.subtitle}
+                    {service.badge}
                   </span>
                   
                   {/* Interactive Top-Right Icon */}
@@ -65,7 +65,7 @@ export default function ServicesSection() {
                 </h3>
 
                 <p className="mt-3 text-slate-300 text-sm sm:text-base leading-relaxed line-clamp-3">
-                  {service.description}
+                  {service.shortDesc}
                 </p>
               </div>
 
