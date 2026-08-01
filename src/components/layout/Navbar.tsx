@@ -55,15 +55,15 @@ export default function Navbar() {
   {!logoFailed ? (
     /* Clip container to show only the emblem part of the logo image */
     <div className="relative h-14 w-14 shrink-0 overflow-hidden">
-      <Image
-        src="/images/logo.png"
-        alt="EMAJ Emblem"
-        fill
-        className="object-cover object-top scale-125"
-        onError={() => setLogoFailed(true)}
-        priority
-      />
-    </div>
+  <Image
+    src="/images/logo.png"
+    alt="EMAJ Emblem"
+    fill
+    className="object-cover object-top scale-125 mix-blend-multiply"
+    onError={() => setLogoFailed(true)}
+    priority
+  />
+</div>
   ) : (
     <div className="w-12 h-12 rounded-xl bg-[#0E2A47] flex items-center justify-center shrink-0">
       <Ship className="w-6 h-6 text-[#E86024]" />

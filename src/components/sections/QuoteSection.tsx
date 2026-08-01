@@ -160,7 +160,7 @@ export default function QuoteSection() {
                           required
                           value={formData.name}
                           onChange={handleChange}
-                          placeholder="John Doe"
+                          placeholder="Your Name"
                           className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-2 focus:ring-[#E86024] focus:border-transparent outline-none transition-all text-sm text-slate-900"
                         />
                       </div>
@@ -174,7 +174,7 @@ export default function QuoteSection() {
                           required
                           value={formData.email}
                           onChange={handleChange}
-                          placeholder="john@company.com"
+                          placeholder="your.email@company.com"
                           className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-2 focus:ring-[#E86024] focus:border-transparent outline-none transition-all text-sm text-slate-900"
                         />
                       </div>
@@ -208,7 +208,7 @@ export default function QuoteSection() {
                           required
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+91 88848 84210"
+                          placeholder="+91 XXXXX XXXXX"
                           className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:bg-white focus:ring-2 focus:ring-[#E86024] focus:border-transparent outline-none transition-all text-sm text-slate-900"
                         />
                       </div>
